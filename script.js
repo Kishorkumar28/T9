@@ -25,8 +25,7 @@ function displayData() {
       <td>${item.id}</td>
       <td>${item.name}</td>
       <td>${item.email}</td>
-      <td>${item.city}</td>
-      <td>${item.phone}</td>
+
     `;
     dataBody.appendChild(row);
   });
