@@ -39,7 +39,7 @@ function createPagination() {
   paginationContainer.innerHTML = '';
 
   for (let i = 1; i <= totalPages; i++) {
-    const listItem = document.createElement('li');
+    const listItem = document.createElement('li'); // Create li element
     if (i === currentPage) {
       listItem.classList.add('active');
     }
@@ -52,9 +52,10 @@ function createPagination() {
       displayData();
     });
     listItem.appendChild(link);
-    paginationContainer.appendChild(listItem);
+    paginationContainer.appendChild(listItem); // Append li to pagination container
   }
 }
+
 
 function updatePagination() {
   itemsPerPage = parseInt(document.getElementById('itemsPerPage').value);
